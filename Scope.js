@@ -10,3 +10,7 @@ function loop() {
 }
 loop();
 //console.log("Final", i); //Functional Scope : ReferenceError: i is not defined
+
+
+// Context is how the function is invoked: b.method(); context is b// or value of this 
+// Scope is visibility of variables

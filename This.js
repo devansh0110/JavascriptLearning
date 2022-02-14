@@ -29,6 +29,7 @@ obj.play();
 var name1 = 'Devansh';
 function CallPerson() {
     console.log("Hi " + this.name1)
+    console.log("Hi " + name1)
 }
 
 

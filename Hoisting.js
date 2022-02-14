@@ -16,12 +16,15 @@ let b = 2;
 
 // Function declaration
 function fun1() {
-    console.log('fun1');
+    console.log(a, 'fun1');
+   // console.log(b, 'fun1');
 }
 
 // Function Expression
 var fun2 = function () {
-    console.log('fun2');
+    var c = 3;
+    console.log(a,'fun2');
+    console.log(b, 'fun1');
 }
 
 var fun3 = () => console.log('fun3');
@@ -29,4 +32,6 @@ var fun3 = () => console.log('fun3');
 console.log(typeof (fun1))
 console.log(typeof (fun2))
 console.log(typeof (fun3))
+fun2();
+fun1();
 
