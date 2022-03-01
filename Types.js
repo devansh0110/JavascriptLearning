@@ -10,3 +10,7 @@ console.log(typeof Symbol('Hi!')); // symbol
 console.log(typeof {}); //object
 console.log(typeof []); //object
 console.log(typeof function(){}); //function : but function is object.
+
+// Extra
+console.log(typeof NaN);
+console.log(typeof Infinity);
