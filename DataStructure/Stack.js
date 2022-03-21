@@ -1,6 +1,7 @@
 module.exports = class Stack {
     constructor() {
         /**
+         *  Last In First Out (LIFO)
          * Applications of Stack Data Structure
 
             To reverse a word - Put all the letters in a stack and pop them out. Because of the LIFO order of stack, you will get the 
@@ -18,7 +19,7 @@ module.exports = class Stack {
      * @return {boolean}
      */
     isEmpty() {
-        // The stack is empty if its linked list doesn't have a head.
+        // The stack is empty if its array doesn't have a head.
         return this.stack.length === 0;
     }
 
@@ -27,11 +28,11 @@ module.exports = class Stack {
      */
     peek() {
         if (this.isEmpty()) {
-            // If the linked list is empty then there is nothing to peek from.
+            // If the array is empty then there is nothing to peek from.
             return null;
         }
 
-        // Just read the value from the start of linked list without deleting it.
+        // Just read the value from the start of array without deleting it.
         return this.stack[this.stack.length - 1];
     }
 
@@ -40,7 +41,7 @@ module.exports = class Stack {
      */
     push(value) {
         // Pushing means to lay the value on top of the stack. Therefore let's just add
-        // the new value at the start of the linked list.
+        // the new value at the start of the array.
         this.stack.push(value);
     }
 
@@ -48,8 +49,8 @@ module.exports = class Stack {
      * @return {*}
      */
     pop() {
-        // Let's try to delete the first node (the head) from the linked list.
-        // If there is no head (the linked list is empty) just return null.
+        // Let's try to delete the first node (the head) from the array.
+        // If there is no head (the array is empty) just return null.
         let ele = this.stack.pop();
         return ele === undefined ? null : ele;
     }
