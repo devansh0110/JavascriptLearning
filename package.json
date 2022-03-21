@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "test": "jest",
+    "coverage": "npm run test -- --coverage",
+    "ci": "npm run lint && npm run coverage"
+  },
+  "dependencies": {
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.3"
+  }
+}

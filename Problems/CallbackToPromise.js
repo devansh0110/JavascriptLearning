@@ -34,8 +34,11 @@ let sqaureAsyncPromise = fnToCOnvertCBToPromise(sqaureAsync);
 let addAsyncPromise = fnToCOnvertCBToPromise(addAsync);
 let errorAsyncPromise = fnToCOnvertCBToPromise(errorAsync);
 
+// Function with Single Argument
 sqaureAsyncPromise(6).then((data) => { console.log(data) });
+// Function with multiple Argument
 addAsyncPromise(6, 6).then((data) => { console.log(data) });
+// Function with error
 errorAsyncPromise().then((data) => { console.log(data) }).catch(error => console.error("error", error));;
 
 

@@ -4,8 +4,8 @@ const sqaureAsync = (number, cb) => {
     }, 1000)
 }
 
-const sqaureAsArray = [sqaureAsync, sqaureAsync, sqaureAsync];
-compositeFunction(sqaureAsArray, 2); // This is equivalent to sqaureAsync(sqaureAsync(sqaureAsync(2)));
+const funAsArray = [sqaureAsync, sqaureAsync, sqaureAsync];
+compositeFunction(funAsArray, 2); // This is equivalent to sqaureAsync(sqaureAsync(sqaureAsync(2)));
 
 function compositeFunction(sqaureAsArray, data) {
     sqaureAsArray[0](data, (resp) => {
