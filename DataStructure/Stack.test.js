@@ -1,4 +1,4 @@
-let Stack = require('../DataStructureAndAlgorithm/Stack.js');
+let Stack = require('../DataStructure/Stack.js');
 
 describe('Stack', () => {
     it('should create empty stack', () => {

@@ -1,4 +1,4 @@
-let Queue = require('../DataStructureAndAlgorithm/Queue.js');
+let Queue = require('../DataStructure/Queue.js');
 
 
 describe('Queue', () => {
